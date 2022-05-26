@@ -1,0 +1,630 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+        <title>CONVERSIONES</title>
+    </head>
+    <body>
+        <!--Botón arriba-->
+        <span class="ir-arriba icon-arrow-up2 botonimagen"></span>
+        <!--Sección de barra de navegación-->
+        <section>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <a href="#fisica">
+                            <button type="button" class="btn btn-outline-danger">FÍSICA</button>
+                        </a>
+                        <a href="#geometria">
+                            <button type="button" class="btn btn-outline-info">GEOMETRÍA</button>
+                        </a>
+                        <a href="#retardos">
+                            <button type="button" class="btn btn-outline-success">CONVERTIDOR UNIDADES</button>
+                        </a>
+                        <a href="#dectobin">
+                            <button type="button" class="btn btn-outline-warning">CONVERTIDOR NUMÉRICO</button>
+                        </a>
+                        <a href="#morseMenu">
+                            <button type="button" class="btn btn-outline-light">CÓDIGO MORSE</button>
+                        </a>
+                      </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler"
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#navbarToggleExternalContent" 
+                            aria-controls="navbarToggleExternalContent" 
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+              </nav>
+        </section>
+        <hr>
+        <!--Sección de portada-->
+        <section>
+            <section>
+                <div class="text-center">
+                    <table><!--Tabla general-->
+                        <tr><!--Fila 1 (y última en este caso, ya que solo necesito una)-->
+                            <td><!--Colimna 1-->
+                                <table><!--Tabla anidada-->
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div>
+                                                    <figure>
+                                                        <img src="https://www.upiicsa.ipn.mx/assets/files/upiicsa/uploads/Escudo_UPIICSA.png"
+                                                        width="130" height="150" alt="Escudo upiicsa">
+                                                    </figure>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><!--Columna 2-->
+                                <table><!--Tabla anidada-->
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h1 class="colorh1 text-center" id="inicio">
+                                                    Instituto Politécnico Nacional IPN
+                                                </h1>
+                                                <h2 class="colorh2 text-center">
+                                                    Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas
+                                                </h2>
+                                                <h2 class="colorh2 text-center">
+                                                    UPIICSA
+                                                </h2>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><!--Colimna 3-->
+                                <table><!--Tabla anidada-->
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div>
+                                                    <figure>
+                                                        <img src="https://www.encb.ipn.mx/assets/files/encb/img/escudos/logo-ipn.png"
+                                                        width="160" height="150" alt="Escudo IPN">
+                                                    </figure>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <h3 class="text-center">
+                Compiladores
+            </h3>
+            <h3 class="text-center">
+                4NM51
+            </h3>
+            <h3 class="text-center">
+                Integrantes:
+            </h3>
+            <h3 class="text-center">
+                <b>Martinez Yañez Angel</b>
+            </h3>
+            <h3 class="text-center">
+                <b>Ruvalcaba Buenrostro Roberto Carlo</b>
+            </h3>
+            <h3 class="text-center">
+                Profesora: Méndez García Sara
+            </h3>
+        </section>
+        <br>
+        <!--Sección de conversiónes de formulas de física-->
+        <section class="contenido">
+            <div class="card">
+                <div class="card-header">
+                    <h3 id="fisica">
+                        CONVERSIÓNES DE FÍSICA  
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!--Tarjeta 1-->
+                        <div class="col-sm-3">
+                            <div class="card bg-danger">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Posición final de un objeto</h5>
+                                    <h5 class="text-center h5-color fw-bold">Xf=Xo+Vo(t-to)</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Xo</span>
+                                        <input type="text" class=" input-style form-control" name="Xo" id="Xo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="Xotxt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Vo</span>
+                                        <input type="text" class=" input-style form-control" name="Vo" id="Vo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="Votxt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">t</span>
+                                        <input type="text" class=" input-style form-control" name="t" id="t" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="ttxt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">to</span>
+                                        <input type="text" class=" input-style form-control" name="to" id="to" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="totxt" class="txtError1"></p>                                       
+                                </div>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-warning" id="btn_xf" onclick="getValueInput1()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="xf_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta 2-->
+                        <div class="col-sm-3">
+                            <div class="card bg-danger">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Velocidad final</h5><br>
+                                    <h5 class="text-center h5-color fw-bold">Vf=a.t</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">a</span>
+                                        <input type="text" class="input-style form-control" name="a" id="a" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="atxt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">t</span>
+                                        <input type="text" class=" input-style form-control" name="t" id="t2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="t2txt" class="txtError1"></p>
+                                </div>
+                                <br><br><br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-warning" id="btn_vf" onclick="getValueInput2()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="vf_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta 3-->
+                        <div class="col-sm-3">
+                            <div class="card bg-danger">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Velocidad inicial</h5><br>
+                                    <h5 class="text-center h5-color fw-bold">Vo=Vf-a.t</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Vf</span>
+                                        <input type="text" class="input-style form-control" id="Vf" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="Vftxt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">a</span>
+                                        <input type="text" class="input-style form-control" id="a2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="a2txt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">t</span>
+                                        <input type="text" class="input-style form-control" id="t3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="t3txt" class="txtError1"></p>
+                                </div>
+                                <br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-warning" id="btn_vo" onclick="getValueInput3()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="vo_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta 4-->
+                        <div class="col-sm-3">
+                            <div class="card bg-danger">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Tiempo</h5><br>
+                                    <h5 class="text-center h5-color fw-bold">t=(Vf-Vo)/a</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Vf</span>
+                                        <input type="text" class="input-style form-control" id="Vf2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="Vf2txt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Vo</span>
+                                        <input type="text" class="input-style form-control" id="Vo2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="Vo2txt" class="txtError1"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">a</span>
+                                        <input type="text" class="input-style form-control" id="a3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="a3txt" class="txtError1"></p>
+                                </div>
+                                <br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-warning" id="btn_t" onclick="getValueInput4()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="t_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <!--Sección de conversiónes de formulas de geometría-->
+        <section class="contenido">
+            <div class="card">
+                <div class="card-header">
+                    <h3 id="geometria">
+                        FORMULAS DE GEOMETRÍA
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row card-center">
+                        <!--Tarjeta 1-->
+                        <div class="col-sm-3">
+                            <div class="card bg-info">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Área de un triángulo</h5>
+                                    <h5 class="text-center h5-color fw-bold">A=(b.h)/2</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">b</span>
+                                        <input type="text" class=" input-style form-control" id="b" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="btxt" class="txtError2"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">h</span>
+                                        <input type="text" class=" input-style form-control" id="h" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="htxt" class="txtError2"></p>
+                                </div>
+                                <br><br><br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-danger" id="aTrian_btn" onclick="getValueInput5()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="aTrian_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta 2-->
+                        <div class="col-sm-3">
+                            <div class="card bg-info">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Área de un trapecio</h5><br>
+                                    <h5 class="text-center h5-color fw-bold">A=(h(B+b))/2</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">h</span>
+                                        <input type="text" class=" input-style form-control" id="h2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="h2txt" class="txtError2"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">B</span>
+                                        <input type="text" class=" input-style form-control" id="BGrande" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="BGrandetxt" class="txtError2"></p>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">b</span>
+                                        <input type="text" class=" input-style form-control" id="b2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="b2txt" class="txtError2"></p>
+                                </div>
+                                <br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-danger" id="aTrap_btn" onclick="getValueInput6()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="aTrap_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta 3-->
+                        <div class="col-sm-3">
+                            <div class="card bg-info">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Área de una circunferencia</h5>
+                                    <h5 class="text-center h5-color fw-bold">π.r²</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">r</span>
+                                        <input type="text" class=" input-style form-control" id="r" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="rtxt" class="txtError2"></p>
+                                </div>
+                                <br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-danger" id="aCir_btn" onclick="getValueInput7()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="aCir_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <!--Sección CONVERTIDOR DE UNIDADES-->
+        <section class="contenido">
+            <div class="card">
+                <div class="card-header">
+                    <h3 id="retardos">
+                        CONVERSIONES DE UNIDADES DE MASA (PESO)
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row card-center">
+                        <!--Tarjeta 1-->
+                        <div class="col-sm-3">
+                            <div class="card bg-success">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Unidades de Peso</h5><br>
+                                    <h5 class="text-center h5-color fw-bold">Seleccione unidad de medida e ingrese cantidad</h5><br>
+                                    <table align="center">
+                                        <tr>
+                                            <td>
+                                                <select name="unidadOriginal" id="unidadOriginal">
+                                                    <option value="t">t</option>
+                                                    <option value="kg">kg</option>
+                                                    <option value="gr">gr</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <h5>&nbspa&nbsp</h5>
+                                            </td>
+                                            <td>
+                                                <select name="unidadConversion" id="unidadConversion">
+                                                    <option value="t">t</option>
+                                                    <option value="kg">kg</option>
+                                                    <option value="gr">gr</option>
+                                                </select>
+                                            </td>
+                                          </tr>
+                                    </table><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Cantidad</span>
+                                        <input type="text" class=" input-style form-control" id="cantidad" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="cantidadTxt" class="txtError2"></p>
+                                </div>
+                                <br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-info" id="calcular_btn" onclick="getValueInput8()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="calcular_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <!--Sección para de convertidor números-->
+        <section class="contenido">
+            <div class="card">
+                <div class="card-header">
+                    <h3 id="dectobin">
+                        CONVERTIDOR DE NÚMEROS
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row card-center">
+                        <!--Tarjeta 1-->
+                        <div class="col-sm-3">
+                            <div class="card bg-warning">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Decimal a Binario</h5><br>
+                                    <h5 class="text-center h5-color fw-bold">D(10) → B(2)</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Decimal</span>
+                                        <input type="text" class=" input-style form-control" id="dec" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="dectxt" class="txtError2"></p>
+                                </div>
+                                <br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-success" id="dec_btn" onclick="getValueInput9()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="dec_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta 2-->
+                        <div class="col-sm-3">
+                            <div class="card bg-warning">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Binario a Decimal</h5><br>
+                                    <h5 class="text-center h5-color fw-bold">B(2) → D(10)</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Binario</span>
+                                        <input type="text" class=" input-style form-control" id="bin" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="bintxt" class="txtError2"></p>
+                                </div>
+                                <br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-success" id="bin_btn" onclick="getValueInput10()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="bin_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta 3-->
+                        <div class="col-sm-3">
+                            <div class="card bg-warning">
+                                <div class="card-body">
+                                    <h5 class="card-title font-monospace">Hexadecimal a Decimal</h5>
+                                    <h5 class="text-center h5-color fw-bold">H(16) → D(10)</h5><br>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Hexadecimal</span>
+                                        <input type="text" class=" input-style form-control" id="hex" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <p id="hextxt" class="txtError2"></p>
+                                </div>
+                                <br><br>
+                                <div class="card-footer bg-transparent">
+                                    <div class="input-group mb-3 div-config">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="btn btn-success" id="hex_btn" onclick="getValueInput11()">Calcular</button>
+                                                </td>
+                                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                                <td>
+                                                    <h5 id="hex_res"></h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SECCIÓN CÓDIGO MORSE-->
+        <section class="contenido">
+            <div class="card">
+                <div class="card-header">
+                    <h3 id="morseMenu">
+                        CONVERTIDOR texto a morse
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row card-center">
+                        <div class="container d-flex justify-content-around align-items center"> 
+                            <div>
+                                 <b> input</b><br>
+                                 <textarea  id="input" cols="30" rows="15"></textarea>
+                            </div>
+
+                            <button class="btn  btn-success " onclick="text2morse()"> convertir </button>
+
+                            <div>
+                                <b> ouput</b><br>
+                                <textarea  id="output" cols="30" rows="15"></textarea>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="code.js"></script>
+</html>

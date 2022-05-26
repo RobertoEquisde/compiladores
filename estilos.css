@@ -1,0 +1,62 @@
+.colorh1{
+    color:darkgreen;
+}
+.colorh2{
+    color:green;
+}
+.prueba{
+    background-color: blue;
+}
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#ffffff;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:2px;
+	right:2px;
+}
+.contenido{
+    width: 1200px;
+    margin: 20px auto;
+    text-align: justify;
+}
+.botonimagen{
+    background-image:url(https://cdn.glitch.me/6a74b8fe-1441-4d9d-a0dc-1ac8b456d7f1%2Fup-arrow-5_icon-icons.com_69823.png?v=1634536455022);
+}
+.div-config{
+	padding:2px;
+	bottom:1px;
+	right:2px;
+	top:8px;
+}
+.input-style{
+	border-color: rgb(206, 206, 206);
+}
+.h5-color{
+	color: #ffffff;
+}
+.card-center{
+	justify-content: center;
+}
+
+.formulario__grupo-incorrecto{
+	border-color: rgb(0, 7, 104);
+    box-shadow: 0 1px 1px rgba(0, 7, 104, 0.075) inset, 0 0 8px rgba(0, 7, 104, 1);
+    outline: 0 none;
+}
+.formulario__grupo-incorrecto2{
+	border-color: rgba(255, 0, 0, 0.486);
+    box-shadow: 0 1px 1px rgba(255, 0, 0, 0.486) inset, 0 0 8px rgb(255, 0, 0);
+    outline: 0 none;
+}
+.txtError1{
+	color: rgb(0, 7, 104);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.txtError2{
+	color: rgb(248, 7, 7);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
